@@ -1,0 +1,17 @@
+[
+  {
+    "name": "name_1",
+    "surname": "surname_1",
+    "occupation": "occupation_1"
+  },
+  {
+    "name": "name_2",
+    "surname": "surname_2",
+    "occupation": "occupation_2"
+  },
+  {
+    "name": "name_3",
+    "surname": "surname_3",
+    "occupation": "occupation_3"
+  }
+]

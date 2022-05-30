@@ -1,0 +1,55 @@
+.hamburger {
+  position: relative;
+  z-index: 5;
+
+  &--pos-fixed {
+    overflow: hidden;
+    height: 100vh;
+    @include desktop {
+      overflow: inherit;
+      height: initial;
+    }
+  }
+
+  &__list {
+    position: fixed;
+    top: 71px;
+    right: -100%;
+    background-color: $bluelight;
+    width: 100%;
+    height: calc(100% - 71px);
+    display: flex;
+    align-items: center;
+    transition: right 500ms;
+  }
+
+  &--active {
+    right: 0;
+  }
+
+  &__list-wrapper {
+    margin: 0 auto;
+  }
+
+  &__list-items {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 30px;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      height: 50px;
+      width: 6px; /* or 100px */
+      border-bottom: 6px dotted $green;
+    }
+
+    &:hover {
+      color: $green;
+    }
+
+    &:hover::before {
+      content: '';
+    }
+  }
+}

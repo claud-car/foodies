@@ -1,0 +1,20 @@
+.button {
+  outline: none;
+  box-shadow: none;
+  border: none;
+
+  &__full {
+    background-color: $green;
+    color: $white;
+    width: 100%;
+    padding: 24px 0;
+    font-size: $text3;
+    line-height: $lHeight3;
+  }
+
+  &--hero {
+    @include desktop {
+      max-width: 200px;
+    }
+  }
+}

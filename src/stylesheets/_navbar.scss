@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 24px 30px;
+  position: fixed;
+  background-color: $bluelight;
+  z-index: 3;
+
+  @include desktop {
+    padding: 42px 128px 0 135px;
+  }
+
+  &__logo {
+    margin-right: auto;
+    color: $green;
+  }
+
+  &__menu {
+    padding: 13px;
+    border: 2px solid $green;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__links {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    width: 510px;
+  }
+
+  &__list-item {
+    margin-right: auto;
+    font-size: $text3;
+    line-height: $lHeight3;
+
+    &:before {
+      position: absolute;
+      height: 25px;
+      width: 6px; /* or 100px */
+      border-bottom: 6px dotted $green;
+      transform: translate(20px, 0px);
+    }
+
+    &:hover {
+      color: $green;
+    }
+
+    &:hover::before {
+      content: '';
+    }
+  }
+}

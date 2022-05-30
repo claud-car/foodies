@@ -1,0 +1,7 @@
+{
+  "extends": "eslint-config-prettier",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2015
+  }
+}

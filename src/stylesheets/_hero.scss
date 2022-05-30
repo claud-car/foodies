@@ -1,0 +1,206 @@
+.hero {
+  background-color: $bluelight;
+  padding-top: 122px;
+  background: linear-gradient(
+    to bottom,
+    $bluelight 0%,
+    $bluelight 75%,
+    $white 75%,
+    $white 100%
+  );
+  margin-bottom: 60px;
+
+  @include desktop {
+    padding-top: 135px;
+    background: linear-gradient(
+      to bottom,
+      $bluelight 0%,
+      $bluelight 90%,
+      $white 90%,
+      $white 100%
+    );
+  }
+
+  &__wrapper {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 320px;
+
+    @include desktop {
+      max-width: 1128px;
+    }
+  }
+
+  &__main {
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &__text-box {
+    margin: 0 auto 47px;
+    max-width: 375px;
+
+    @include desktop {
+      max-width: 530px;
+      text-align: left;
+      margin: 48px auto 0 0;
+      flex: 1;
+    }
+  }
+
+  &__button--mrg {
+    margin-left: 29px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: $text;
+    line-height: $lHeight4;
+    margin-bottom: 53px;
+  }
+
+  &__ratings {
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto 52px;
+
+    &--active {
+      z-index: -1;
+
+      @include desktop {
+        z-index: 0;
+      }
+    }
+
+    @include desktop {
+      max-width: 470px;
+      margin: 0;
+      flex: 1;
+    }
+  }
+
+  &__ratings-polka {
+    width: 174px;
+    height: 174px;
+    background-image: radial-gradient(#f7f7f7 20%, transparent 20%);
+    background-color: transparent;
+    background-position: 0px 0px, 50px 50px;
+    background-size: 15px 14px;
+    position: absolute;
+    bottom: -28px;
+    right: -28px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__hover-box {
+    max-width: 230px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    left: 0;
+
+    @media screen and (min-width: 375px) {
+      left: 44px;
+    }
+
+    @include desktop {
+      left: 0;
+      top: 50%;
+    }
+  }
+
+  &__box {
+    background-color: $white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 18px;
+
+    &--ratings {
+      border: 1px solid $black;
+      margin-bottom: 10px;
+    }
+
+    &:last-child {
+      padding: 7px 16px 6px 10px;
+    }
+  }
+
+  &__box-text {
+    font-size: $text2;
+    line-height: $lHeight2;
+
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+
+  &__star--mrg {
+    margin-right: 6px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__imgSmall-woman {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  &__affiliates {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include desktop {
+      max-width: 570px;
+      margin-top: -60px;
+      flex: 1;
+      width: 50%;
+    }
+  }
+
+  &__affiliates-img {
+    width: 120px;
+    vertical-align: middle;
+    margin-bottom: 31px;
+
+    &:first-child {
+      margin-right: auto;
+    }
+
+    &:nth-child(2) {
+      margin-left: auto;
+
+      @include desktop {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+
+    &:last-child {
+      margin: 0 auto;
+
+      @include desktop {
+        margin: 0;
+        margin-right: 10px;
+      }
+
+      @include desktop-medium {
+        margin-right: 0;
+      }
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+}

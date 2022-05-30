@@ -1,0 +1,65 @@
+// Inter Font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  background-color: $bluelight;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: $text10;
+  line-height: $lHeight11;
+
+  @include desktop {
+    font-size: $text12;
+    line-height: $lHeight13;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: $text8;
+  line-height: $lHeight9;
+
+  @include desktop {
+    font-size: $text11;
+    line-height: $lHeight12;
+  }
+}
+
+h3 {
+  font-weight: 500;
+  font-size: $text7;
+  line-height: $lHeight8;
+}

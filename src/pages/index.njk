@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodies</title>
+  </head>
+  <!-- <img src="{% static '../images/avocado.png' %}" alt="" /> -->
+  <!-- {% include "facebook.njk" %} -->
+  <body id="js-pos-fixed">
+    <header>
+      <nav class="navbar">
+        <h3 class="navbar__logo">Foodies</h3>
+        <div class="navbar__menu" id="js-open-hamburger-menu">
+          {% include "menu.njk" %}
+          <div class="hamburger">
+            <ul class="hamburger__list" id="js-hamburger-menu">
+              <div class="hamburger__list-wrapper">
+                <li class="hamburger__list-items">
+                  <a href="">Home</a>
+                </li>
+                <li class="hamburger__list-items">
+                  <a href="">About Us</a>
+                </li>
+                <li class="hamburger__list-items">
+                  <a href="">Service Us</a>
+                </li>
+                <li class="hamburger__list-items">
+                  <a href="">Our Company</a>
+                </li>
+                <li class="hamburger__list-items">
+                  <a href="">Pages</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar__links">
+          <ul class="navbar__list">
+            <li class="navbar__list-item"><a href="">Home</a></li>
+            <li class="navbar__list-item"><a href="">About Us</a></li>
+            <li class="navbar__list-item"><a href="">Service Us</a></li>
+            <li class="navbar__list-item"><a href="">Our Company</a></li>
+            <li class="navbar__list-item"><a href="">Pages</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__main">
+            <div class="hero__text-box">
+              <h1 class="hero__title">We're Serious For Food.</h1>
+              <p class="hero__text">
+                We strive to provide a space where guests can connect with
+                themselves and explore their full potential, offering a safe
+                place.
+              </p>
+              <button class="button button__full button--hero">
+                Get Started {% include "arrow-right-white.njk" %}
+              </button>
+            </div>
+            <div class="hero__ratings" id="js-hamburger-hide">
+              <div class="hero__ratings-polka"></div>
+              <img
+                class="hero__image"
+                src="{% static '../images/woman2.png' %}"
+                alt=""
+              />
+              <div class="hero__hover-box">
+                <div class="hero__box hero__box--ratings">
+                  <span class="hero__box-text">5.0 Ratings</span> {% include
+                  "star.njk" %}{% include "star.njk" %}{% include "star.njk"
+                  %}{% include "star.njk" %}{% include "star.njk" %}
+                </div>
+                <div class="hero__box">
+                  <img
+                    class="hero__imgSmall-woman"
+                    src="{% static '../images/woman.png' %}"
+                    alt=""
+                  />
+                  <span class="hero__box-text">Good Quality Product</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__affiliates">
+            <img
+              class="hero__affiliates-img"
+              src="{% static '../images/logoipsum.png' %}"
+              alt=""
+            />
+            <img
+              class="hero__affiliates-img"
+              src="{% static '../images/logoipsum2.png' %}"
+              alt=""
+            />
+            <img
+              class="hero__affiliates-img"
+              src="{% static '../images/logoipsum3.png' %}"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Hero -->
+      <section class="section">
+        <div class="feature">
+          <div class="feature__card">
+            <div class="feature__icon">{% include "truck.njk" %}</div>
+            <div class="feature__title">Free Shipping</div>
+            <div class="feature__text">Orders over $140</div>
+          </div>
+
+          <div class="feature__card">
+            <div class="feature__icon">{% include "wallet.njk" %}</div>
+            <div class="feature__title">Quick Payment</div>
+            <div class="feature__text">100% secure payment</div>
+          </div>
+
+          <div class="feature__card">
+            <div class="feature__icon">{% include "percentage.njk" %}</div>
+            <div class="feature__title">Special Promo</div>
+            <div class="feature__text">Get special promo</div>
+          </div>
+
+          <div class="feature__card">
+            <div class="feature__icon">{% include "headphone.njk" %}</div>
+            <div class="feature__title">24/7 Support</div>
+            <div class="feature__text">Ready support</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
